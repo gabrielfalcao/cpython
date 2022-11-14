@@ -1,3 +1,7 @@
+MacOS::
+
+      ./configure --prefix="${HOME}/usr"  --with-pydebug --with-openssl=$(brew --prefix openssl) --with-tcltk-libs="$(pkg-config --libs tcl tk)" --with-tcltk-includes="$(pkg-config --cflags tcl tk)"
+
 This is Python version 3.7.15+
 ==============================
 
@@ -55,6 +59,7 @@ On Unix, Linux, BSD, macOS, and Cygwin::
     sudo make install
 
 This will install Python as ``python3``.
+
 
 You can pass many options to the configure script; run ``./configure --help``
 to find out more.  On macOS case-insensitive file systems and on Cygwin,
